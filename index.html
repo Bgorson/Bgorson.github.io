@@ -1,57 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Brandon's Bio!</title>
-        <style type = "text/css">
-        h1{
-            background:black;
-            color:white;
-            text-align:center;
-            text-decoration:underline;
-        }
-        h2{
-            font-size: 24px;
-        }
-        .container {
-            width:1024px;
-            margin: 0 auto;
-            }
-        #main-bio,#contact-info,#bio-image {
-            float:left;
-            }
-       #main-bio {
-           width:70%
-       }
-        #contact-info{
-            width:30%       
-            }
-        #bio-image{
-         
-            height:200px;
-            margin-right:20px;
-        }
-        </style>
-    </head>
-    <body>
-        <h1>Student Bio</h1>
 
-        <div class= "container">
-            <section id = "main-bio">
-        <h2>Brandon Gorson</h2>
-        <img id= "bio-image" src="https://avatars2.githubusercontent.com/u/42119471?s=460&v=4"> 
-    
-        <p> My name is Brandon, I'm a student trying to learn to code. I've been a counselor most of my adult career and am ready to make a change. I'm taking the first steps towards a new career</p>
-        
-    </section>  
-        <section id= "contact-info">
-        <H3>Contact Info</H3>
-        <ul>
-            <li><strong>Email:</strong> <a href= "mailto:BGorson32@gmail.com">BGorson32@gmail.com</a></li>
-            <li><strong>GitHub:</strong><a href = "https://github.com/Bgorson">Bgorson</a></li>
-            <li><strong>Portfolio:</strong><a href = "#">Coming Soon</a></li>
-        </ul>
-        </section>
-        </div>
-    
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Brandon Gorson</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./assets/css/hover-min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- nav bar with about, portfolio, contact info-->
+  <div id= "stickyBar">
+  <div class="topnav" id="myTopnav">
+      <a href="#splash" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- jumbotron style image -->
+  <div class="aboutContainer">
+    <div id="splash"></div>
+    <div class="centeredText">Brandon Gorson</div>
+  </div>
+
+  <!-- content with about me section -->
+  <div id="about">
+    <div class="row">
+      <div class="column"><p>I am a full stack developer with knowledge primarily in Javascript, HTML and CSS. I'm currently
+        completing my education to gain a deeper understanding in a variety
+        of languages and technologies. I'm seeking employement to build your next project and make your ideas come to
+        life.
+      </br>
+      </br>On this page, you will find a variety of projects that I have completed as well as contact information.
+    I've spent the majority of my career as a professional counselor working closely with
+        traumatized populations in Chicago. 
+        I'm taking this new step in my life to pursue a passion of mine, technology. I'm always innovating and creating
+        and am ready to bring these interests and skills into a new field. 
+        <br>
+        <br>
+        In addition to my full stack work, I am also developing skills in Unity to be able to design small games. Completed projects will be posted here as well.
+        <br>
+        <br>
+        See my more detailed resume <a style="color:white"  class='links' href= "assets/resume.pdf" target="_blank">here</a>
+        </p>
+      </div>
+
+    </div>
+    <p id = "compHeader"> I am competent in the following:</p>
+    <div id="competencies">
+      <img class= "badges" src="./assets/images/html.png">
+      <img class= "badges" src="./assets/images/js.png">
+      <img class= "badges" src="./assets/images/css.png">
+      <img class= "badges" src="./assets/images/bootstrap.png">
+      <img class= "badges" src="./assets/images/jquery.png">
+      <img class= "badges" src="./assets/images/firebase.png">
+      <img class= "badges" src="./assets/images/node.png">
+      <img class= "badges" src="./assets/images/mysql.png">
+    </div>
+
+  </div>
+  <!-- portfolio of projects -->
+<h2 id= "portfolioHeader" >PROJECTS</h2>
+  <div class="row" id="portfolio"> 
+    <div class="column responsiveImage hvr-grow"><a href = "https://bgorson.github.io/ProjectOne/" target="_blank"><img class= "roundedImage" src="./assets/images/venyou.jpg" alt="venyou" width="300" height="220"></a><p>VenYou</p><a class= "links" href= "https://github.com/Bgorson/ProjectOne">Source Code</a></div>
+
+    <div class="column responsiveImage hvr-grow"><a href ="https://bgorson.github.io/triviagameplus/" target="_blank"><img class= "roundedImage" src="./assets/images/starcraft.jpg" alt="starcraft" width="300" height="220"></a><p>StarCraft Trivia</p><a class= "links" href= "https://github.com/Bgorson/triviagameplus">Source Code</a></div>
+
+    <div class="column responsiveImage hvr-grow"><a href = "https://bgorson.github.io/Giphy/" target="_blank"><img class= "roundedImage" src="./assets/images/arrested.jpg" alt="arrested" width="300" height="220"></a><p>Gifs</p><a class= "links" href= "https://github.com/Bgorson/Giphy">Source Code</a></div>
+    <div class="column responsiveImage hvr-grow"><a href = "https://bg-friendfinder.herokuapp.com/" target="_blank"><img class= "roundedImage" src="./assets/images/friends.jpeg" alt="friendFinder" width="300" height="220"></a><p>Friend Finder</p><a class= "links" href= "https://github.com/Bgorson/friendFinder">Source Code</a></div>
+    <!-- <div class="column responsiveImage hvr-grow"><a href = "https://bgorson.github.io/StarWarsRPG/" target="_blank"><img class= "roundedImage" src="./assets/images/starwars.jpg" alt="starwars" width="300" height="220"></a><p>Starwars RPG</p><a class= "links" href= "https://github.com/Bgorson/StarWarsRPG">Source Code</a></div> -->
+  </div>
+ 
+
+  <!-- contact info with links to differnet areas -->
+  <div id='contact'>
+    <div id="directContact">
+      <a href ="https://www.linkedin.com/in/brandon-gorson-74866b6b" target="_blank"><i class= "hvr-pulse-shrink fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href ="https://github.com/Bgorson" target="_blank"><i class="hvr-pulse-shrink fa fa-github" aria-hidden="true"></i></a>
+      <a href ="mailto:BGorson32@gmail.com"> <i class="hvr-pulse-shrink fa fa-envelope" aria-hidden="true"></i></a>
+      <a href="tel:1-847-977-3626"><i class="hvr-pulse-shrink fa fa-phone" aria-hidden="true"></i></a>
+          </div>   
+          <p class= "extraContact">1-847-977-3626</p>
+          <p class = "extraContact">BGorson32@gmail.com</p> 
+  </div>
+  <script src="./assets/javascript/javascript.js"></script>
+</body>
+
 </html>
