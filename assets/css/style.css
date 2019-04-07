@@ -3,6 +3,19 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
+.star, .star2{
+  background-color:white;
+  width:4px;
+  height:4px;
+  margin:5px;
+  position: absolute;
+  top:100px;
+  transform:rotate(90deg);
+  border-radius:50%;
+  opacity:0;
+
+}
+
 body {
   background-color: rgb(4,5,7)
 }
