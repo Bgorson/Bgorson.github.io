@@ -5,7 +5,9 @@ html {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
-
+.description{
+  max-width: 300px;
+}
 
 body {
   background-color: rgb(4,5,7);
@@ -268,10 +270,9 @@ ul {
   flex-wrap:wrap;
 }
 .badges{
-  max-height: 100px;
-  margin-top:1vw;
-  margin-right:1vw;
-  border-radius: 25px;
+  max-height: 50px;
+  max-width: 55px;
+  border-radius: 10px;
 }
 #compHeader{
   text-align: center;
@@ -282,6 +283,9 @@ ul {
   padding: .5em, 5em;
   text-decoration: none;
   text-transform: uppercase;
+}
+.badgeCollection{
+  max-width: 300px;
 }
 /* 
 .shooting_star {
