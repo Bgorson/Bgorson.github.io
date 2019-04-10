@@ -177,6 +177,10 @@ transform: rotateZ(45deg);
 
 }
 
+.projectWrapper {
+  margin-right:1em;
+}
+
 .centeredText {
   position: absolute;
   top: 50%;
